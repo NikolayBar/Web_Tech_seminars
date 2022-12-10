@@ -5,10 +5,8 @@
 
 const userTemp = Number.parseFloat(prompt("Ввести температуру в градусах Цельсия"));
 
-alert(`${userTemp.toFixed(1)} градусов Цельсия равны ${CelsiusToFahrenheit(userTemp)} градусов по Фаренгейту`);
+alert(`${userTemp.toFixed(1)} градусов Цельсия равны ${celsiusToFahrenheit(userTemp).toFixed(2)} градусов по Фаренгейту`);
 
-function CelsiusToFahrenheit(temp) {
-    res = (9 / 5) * temp + 32;
-    res = res.toFixed(2);
-    return res;
+function celsiusToFahrenheit(cTemp) {
+    return (9 / 5) * cTemp + 32;
 }
