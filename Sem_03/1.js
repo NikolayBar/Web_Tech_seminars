@@ -3,7 +3,7 @@
 // Формула перевода градусов Цельсия в градусы Фаренгейта: градусы Фаренгейта = (9 / 5) * градусы Цельсия + 32
 // 
 
-const userTemp = Number.parseFloat(prompt("Введите температуру в градусах Цельсия"));
+const userTemp = Number.parseFloat(prompt("Ввести температуру в градусах Цельсия"));
 
 alert(`${userTemp.toFixed(1)} градусов Цельсия равны ${CelsiusToFahrenheit(userTemp)} градусов по Фаренгейту`);
 
